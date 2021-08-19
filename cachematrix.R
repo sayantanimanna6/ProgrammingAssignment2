@@ -1,3 +1,11 @@
+# Put comments here that give an overall description of what your
+## functions do
+#Week 3 Programming Assignment
+#Created by Sayantani Manna
+## The mackCacheMatrix creates the "matrix" that can cache
+## its inverse.
+
+
 makeCacheMatrix <- function(x = matrix()){
   inv <- NULL
   set <- function(y){
@@ -9,6 +17,9 @@ makeCacheMatrix <- function(x = matrix()){
   getInverse <- function(){inv}
   list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
+
+## The cacheSolve computes the inverse of the "matrix"
+## returcned by the makeCacheMatrix function above.
 
 cacheSolve <- function(x, ...){
   inv <- x$getInverse()
